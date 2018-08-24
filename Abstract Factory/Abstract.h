@@ -1,0 +1,8 @@
+//
+// Created by maesly on 24/08/18.
+//
+
+#ifndef TAREAEXTRACLASE2_ABSTRACT_H
+#define TAREAEXTRACLASE2_ABSTRACT_H
+
+#endif //TAREAEXTRACLASE2_ABSTRACT_H
