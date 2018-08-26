@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Abstract Factory/Abstract.h"
 #include "Abstract Factory/Cliente.h"
+#include "Observer/Observer.h"
 
 //#define CARROROJO
 int main() {
 
     Abstract *factory;
-
+/**
 #ifdef CARROROJO
 
     factory = new carroRojo;
@@ -17,4 +18,12 @@ int main() {
     cliente->crear();
     std::cout << "Hello, World!" << std::endl;
     return 0;
-}
+*/
+
+    Subject subj;
+
+    DivOserver divOserver1(&subj,4);
+    DivOserver divOserver2(&subj,3);
+    ModObserver divOserver3(&subj,3);
+    subj.setVal(14);
+ }

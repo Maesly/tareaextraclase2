@@ -3,4 +3,4 @@ project(tareaextraclase2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(tareaextraclase2 main.cpp "Abstract Factory/Abstract.h" "Abstract Factory/Carros.h" "Abstract Factory/Cliente.h")
+add_executable(tareaextraclase2 main.cpp "Abstract Factory/Abstract.h" "Abstract Factory/Carros.h" "Abstract Factory/Cliente.h" Observer/Observer.h Observer/Subject.h)
