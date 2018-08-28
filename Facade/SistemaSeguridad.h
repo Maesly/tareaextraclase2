@@ -1,0 +1,14 @@
+//
+// Created by Josue Chaves on 27/8/18.
+//
+
+#ifndef TAREAEXTRACLASE2_SISTEMASEGURIDAD_H
+#define TAREAEXTRACLASE2_SISTEMASEGURIDAD_H
+
+
+class SistemaSeguridad {
+
+};
+
+
+#endif //TAREAEXTRACLASE2_SISTEMASEGURIDAD_H

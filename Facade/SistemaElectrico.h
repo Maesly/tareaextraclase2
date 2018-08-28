@@ -1,0 +1,14 @@
+//
+// Created by Josue Chaves on 27/8/18.
+//
+
+#ifndef TAREAEXTRACLASE2_SISTEMAELECTRICO_H
+#define TAREAEXTRACLASE2_SISTEMAELECTRICO_H
+
+
+class SistemaElectrico {
+
+};
+
+
+#endif //TAREAEXTRACLASE2_SISTEMAELECTRICO_H
