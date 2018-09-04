@@ -1,5 +1,13 @@
-//
-// Created by Josue Chaves on 27/8/18.
-//
-
 #include "CajaMarchas.h"
+
+CajaMarchas::CajaMarchas() {
+
+    marcha = "Neutro";
+}
+
+std::string CajaMarchas::cambiarMarcha(std::string pMarcha) {
+
+    marcha = pMarcha;
+    return "Marcha actual: " + pMarcha;
+}
+
