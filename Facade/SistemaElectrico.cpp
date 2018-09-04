@@ -3,3 +3,9 @@
 //
 
 #include "SistemaElectrico.h"
+
+std::string SistemaElectrico::chequearSistemaElectrico() {
+    isChequeado = true;
+    return "Sistema Electrico chequeado;";
+
+}

@@ -1,13 +1,13 @@
-//
-// Created by Josue Chaves on 27/8/18.
-//
-
 #ifndef TAREAEXTRACLASE2_SISTEMASEGURIDAD_H
 #define TAREAEXTRACLASE2_SISTEMASEGURIDAD_H
 
+#include "iostream"
 
 class SistemaSeguridad {
-
+private:
+    bool isChequeado = false;
+public:
+    std::string chequearSistemaSeguridad();
 };
 
 

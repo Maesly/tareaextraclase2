@@ -1,5 +1,7 @@
-//
-// Created by Josue Chaves on 27/8/18.
-//
-
 #include "SistemaSeguridad.h"
+
+std::string SistemaSeguridad::chequearSistemaSeguridad() {
+    isChequeado = true;
+    return "Sistema de Seguridad Chequeado.";
+
+}

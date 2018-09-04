@@ -5,8 +5,16 @@
 #ifndef TAREAEXTRACLASE2_TANQUE_H
 #define TAREAEXTRACLASE2_TANQUE_H
 
+#include "iostream"
 
 class Tanque {
+private:
+    int nivelDeGasolina = 0;
+    int nivelMaximoDeGasolina = 100;
+
+public:
+    std::string repostar( int pCantidadDeGasolina );
+
 
 };
 
