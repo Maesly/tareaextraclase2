@@ -1,8 +1,8 @@
 #include <iostream>
-#include "Abstract Factory/Abstract.h"
-#include "Abstract Factory/Cliente.h"
-#include "Observer/Observer.h"
-#include "Adapter/Adaptador.h"
+#include "../Abstract Factory/Abstract.h"
+#include "../Abstract Factory/Cliente.h"
+#include "../Observer/Observer.h"
+#include "../Adapter/Adaptador.h"
 //#define CARROROJO
 int main() {
 
