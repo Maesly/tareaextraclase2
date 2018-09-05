@@ -2,25 +2,25 @@
 
 std::string LucesFrente::encenderLuces() {
 
-    intensidad = "baja";
+    intensidad = "media";
     areOn;
     return "Luces encendidas a intensidad: " + intensidad;
 }
 
 std::string LucesFrente::cambiarIntensidad(int Intensidad) {
     if( areOn ){
-        if((Intensidad == 1 && intensidad == "baja") || ( Intensidad == 2 && intensidad == "alta" ) || ( Intensidad == 3 && intensidad == "muy alta" ) ){
+        if((Intensidad == 1 && intensidad == "baja") || ( Intensidad == 2 && intensidad == "media" ) || ( Intensidad == 3 && intensidad == "alta" ) ){
             return "Las luces ya están en intensidad: " + intensidad;
         }else{
             if ( Intensidad == 1 ){
                 intensidad = "baja";
                 return "Las luces ahora están en intensidad baja.";
             } else if( Intensidad == 2 ){
-                intensidad = "alta";
-                return " Las luces ahora están en intensidad alta.";
+                intensidad = "media";
+                return " Las luces ahora están en intensidad media.";
             } else{
-                intensidad = "muy alta";
-                return "Las luces ahora están en intensidad muy alta.";
+                intensidad = "alta";
+                return "Las luces ahora están en intensidad alta.";
             }
 
             }

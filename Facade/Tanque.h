@@ -14,6 +14,7 @@ private:
 
 public:
     std::string repostar( int pCantidadDeGasolina );
+    void getNivelGasolina();
 
 
 };

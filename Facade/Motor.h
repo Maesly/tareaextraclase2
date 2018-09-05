@@ -8,12 +8,18 @@
 class Motor {
 private:
     bool isOn;
-
+    SistemaElectrico *sistemaElectrico = new SistemaElectrico();
+    SistemaSeguridad *sistemaSeguridad = new SistemaSeguridad();
 
 public:
+public:
+    Motor(){
+    isOn = false; }
+
+
     std::string encender();
     std::string apagar();
-    std::string revisarSistemas(SistemaSeguridad pSistemaSeguridad, SistemaElectrico pSistemaElectrico);
+    std::string revisarSistemas();
 
 
 };

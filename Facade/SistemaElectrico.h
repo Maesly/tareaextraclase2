@@ -1,7 +1,7 @@
 #ifndef TAREAEXTRACLASE2_SISTEMAELECTRICO_H
 #define TAREAEXTRACLASE2_SISTEMAELECTRICO_H
 
-#include "iostream";
+#include "iostream"
 
 class SistemaElectrico {
 private:

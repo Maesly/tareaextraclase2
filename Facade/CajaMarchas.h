@@ -6,13 +6,13 @@
 
 class CajaMarchas {
 private:
-    std::string marcha;
+    int marcha = 0;
 
 public:
 
     CajaMarchas();
-    ~CajaMarchas();
-    std::string cambiarMarcha( std::string pMarcha );
+    void cambiarMarcha(int pMarcha);
+    std::string imprimirMarcha();
 
 };
 #endif //TAREAEXTRACLASE2_CAJAMARCHAS_H

@@ -8,3 +8,7 @@ std::string Tanque::repostar(int pCantidadDeGasolina) {
         return "No se pudo repostar el vehículo con el nivel propuesto de gasolina.";
     }
 }
+
+void Tanque::getNivelGasolina() {
+    std::cout <<"El nivel de Gasolina es: " << nivelDeGasolina << std::endl;
+}
