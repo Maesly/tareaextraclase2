@@ -1,0 +1,14 @@
+//
+// Created by Josue Chaves on 5/9/18.
+//
+
+#ifndef TAREAEXTRACLASE2_APLPATRONESDISENO_H
+#define TAREAEXTRACLASE2_APLPATRONESDISENO_H
+
+
+class AplPatronesDiseno {
+
+};
+
+
+#endif //TAREAEXTRACLASE2_APLPATRONESDISENO_H
