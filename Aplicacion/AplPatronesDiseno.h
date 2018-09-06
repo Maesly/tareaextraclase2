@@ -14,8 +14,7 @@
 #include "../Abstract Factory/Carros.h"
 #include "../Abstract Factory/Cliente.h"
 #include "../Abstract Factory/Abstract.h"
-//#include "../Observer/Observer.h"
-
+#include "../Observer/Subject.h"
 using  namespace std;
 
 class AplPatronesDiseno {
@@ -31,7 +30,7 @@ private:
 
     Abstract *factory;
 
-    //Subject sujeto;
+    Subject sujeto;
 
 public:
     void menuPrincipal();

@@ -1,14 +1,12 @@
-//
-// Created by maesly on 26/08/18.
-//
-#include <iostream>
-#include <vector>
-using namespace std;
 #ifndef TAREAEXTRACLASE2_SUBJECT_H
 #define TAREAEXTRACLASE2_SUBJECT_H
 
+#include <iostream>
+#include <vector>
+
+
 class Subject{
-    vector <class Observer *> views;
+    std::vector <class Observer *> views;
     int value;
 public:
     void attach(Observer *obs){
@@ -24,4 +22,5 @@ public:
     void notify();
 
 };
+
 #endif //TAREAEXTRACLASE2_SUBJECT_H

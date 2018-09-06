@@ -1,12 +1,9 @@
-//
-// Created by maesly on 26/08/18.
-//
-
 #ifndef TAREAEXTRACLASE2_OBSERVER_H
 #define TAREAEXTRACLASE2_OBSERVER_H
 
 
 #include "Subject.h"
+#include "iostream"
 
 class Observer{
     Subject *model;
@@ -42,7 +39,7 @@ public:
     void update(){
 
         int v = getSubject()->getVal(), d = getDivisor();
-        cout << v << " div "<< d << " is "<< v/d << "\n";
+        std::cout << v << " div "<< d << " is "<< v/d << "\n";
     }
 };
 
@@ -52,8 +49,9 @@ public:
     ModObserver(Subject *mod,int div): Observer(mod,div){}
     void update(){
         int v = getSubject()->getVal(), d = getDivisor();
-        cout << v << " mod " << d << " is " << v % d << '\n';
+        std::cout << v << " mod " << d << " is " << v % d << '\n';
 
     }
 };
+
 #endif //TAREAEXTRACLASE2_OBSERVER_H

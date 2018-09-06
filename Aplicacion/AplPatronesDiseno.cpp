@@ -3,6 +3,7 @@
 //
 
 #include "AplPatronesDiseno.h"
+#include "../Observer/Observer.h"
 
 void AplPatronesDiseno::menuPrincipal() {
     opcion = 1;
@@ -153,11 +154,11 @@ void AplPatronesDiseno::menuPrincipal() {
 
                 cout << "\n" << endl;
                 cout << "********Ejecución en proceso********" << std::endl;
-//
-//                DivOserver divOserver1(&sujeto,4);
-//                DivOserver divOserver2(&sujeto,3);
-//                DivOserver divOserver3(&sujeto,4);
-//                sujeto.setVal(14);
+
+                DivOserver divOserver1(&sujeto,4);
+                DivOserver divOserver2(&sujeto,3);
+                DivOserver divOserver3(&sujeto,4);
+                sujeto.setVal(14);
 
                 cout << "********Ejecución terminada********" << std::endl;
 
