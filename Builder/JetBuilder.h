@@ -4,7 +4,7 @@
 #include "PlaneBuilder.h"
 //Clase concreta del PlaneBuilder
 //Sabe solamente construir un avión Jet.
-class JetBuilder: PlaneBuilder {
+class JetBuilder: public PlaneBuilder {
 public:
     void construirPartes();
     void construirMotor();

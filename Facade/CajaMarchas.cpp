@@ -1,3 +1,4 @@
+#include <iostream>
 #include "CajaMarchas.h"
 
 CajaMarchas::CajaMarchas() {
@@ -6,17 +7,17 @@ CajaMarchas::CajaMarchas() {
 }
 
 void CajaMarchas::cambiarMarcha(int pMarcha) {
-    if ( -1 <= marcha && marcha <= 5 ){
+    if ( -1 <= pMarcha && pMarcha <= 5 ){
         marcha += pMarcha;
-        imprimirMarcha();
+        std::cout << imprimirMarcha() << std::endl;
     }else if( pMarcha == 10 ) {
         marcha = 0;
-        imprimirMarcha();
+        std::cout << imprimirMarcha() << std::endl;
     }else if( pMarcha == 11 ){
         marcha = -1;
-        imprimirMarcha();
+        std::cout << imprimirMarcha() << std::endl;
     }else{
-        imprimirMarcha();
+        std::cout << imprimirMarcha() << std::endl;
     }
 }
 

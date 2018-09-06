@@ -14,6 +14,14 @@ void Carro::encenderCarro() {
 void Carro::apagarCarro() {
     std::cout << "Apagando el carro(clase Carro)" << std::endl;
     std::cout << motor->apagar() << std::endl;
+    std::cout << lucesFrente->apagarLuces();
+    delete motor;
+    delete lucesFrente;
+    delete tanque;
+    delete sistemaSeguridad;
+    delete sistemaElectrico;
+    delete cajaMarchas;
+    delete llantas;
     std::cout << "Carro apagado(clase Carro)" << std::endl;
 
 }
@@ -79,7 +87,6 @@ void Carro::revisarNivelGasolina() {
 }
 
 void Carro::repostar(int cantidadGasolina) {
-    std::cout << "Repostando"
-                 " (clase Carro)" << std::endl;
-    tanque->repostar(cantidadGasolina);
+    std::cout << "Repostando (clase Carro)" << std::endl;
+    std::cout << tanque->repostar(cantidadGasolina) << std::endl;
 }

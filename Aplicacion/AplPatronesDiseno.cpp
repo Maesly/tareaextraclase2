@@ -23,10 +23,11 @@ void AplPatronesDiseno::menuPrincipal() {
         cout << "Elija el patrón que desea probar: " << endl;
         cout << "\t\t 1. Façade" <<endl;
         cout << "\t\t 2. Builder" <<endl;
-        cout << "\t\t 3. Abstract Factory" <<endl;
-        cout << "\t\t 4. Adapter" <<endl;
+        cout << "\t\t 3. Adapter" <<endl;
+        cout << "\t\t 4. Abstract Factory" <<endl;
         cout << "\t\t 5. Observer" <<endl;
         cout << "\t\t 6. Salir" <<endl;
+        cin >> opcion;
 
         switch(opcion) {
             case 1: {
@@ -53,29 +54,119 @@ void AplPatronesDiseno::menuPrincipal() {
                 cout << "En este caso vamos a encender el objeto carro, lo cual enciende el motor," <<endl;
                 cout << "el motor chequea los sistemas eléctrico y de seguridad. Luego encenderemos las luces, cambiaremos la intensidad," <<endl;
                 cout << "haremos un cambio de marcha, revisaremos el nivel de gasolina, y lo podemos repostar si es necesario." <<endl;
+                cout << "\n\n\n" << endl;
+
+                carro->encenderCarro();
+                carro->encenderLuces();
+                carro->subirIntensidadLuces();
+                carro->bajarIntesidadLuces();
+                carro->apagarLuces();
+                carro->subirMarcha();
+                carro->bajarMarcha();
+                carro->neutro();
+                carro->reversa();
+                carro->revisarNivelGasolina();
+                carro->repostar(50);
+                carro->revisarNivelGasolina();
+                carro->moverVolanteIzquierda();
+                carro->moverVolanteDerecha();
+                carro->moverVolantePosicionInicial();
+                carro->apagarCarro();
+
+                delete carro;
+                cout << "***********************************Façade Finalizado***********************************" << endl;
+                break;
+            }
+            case 2:{
+                cout << "Patrón de Diseño Builder" << endl;
+                cout << "Para este ejemplo:" <<  endl;
+                cout << "Se quiere construir un avión, este está compuesto de un cuerpo y un motor," << endl;
+                cout << "estos se construyen paso a paso." << endl;
+                cout << "La clase Plane va a ser nuestro objeto final." <<  endl;
+                cout << "La clase Plane Builder es una clase abstracta, esto significa, que los " <<endl;
+                cout << "siguientes builders deben tener al menos los métodos de esta clase." << endl;
+                cout << "La clase PropellerBuilder crea un avion con hélice, y solo sabe hacer este tipo de avión." << endl;
+                cout << "La clase JetBuilder sabe hacer aviones tipo jet." << endl;
+                cout << "La clase Director define los pasos y le dice a los constructores que orden seguir para construir un objeto" << endl;
+                cout << "\n\n" << endl;
+
+                cout << "********Ejecución en proceso********" << std::endl;
+                Plane *avionJet = director.crearAvion(&constructorJet);
+                Plane *avionHelice = director.crearAvion(&constructorHelice);
+                avionJet->mostrar();
+                avionHelice->mostrar();
+                cout << "********Ejecución en finalizada********" << std::endl;
+
+                break;
+            }
+            case 3:{
+
+                cout << "Patrón de Diseño Adapter" << endl;
+                cout << "\n" << endl;
+                cout << "El patron de diseño adapter consiste en:  " << endl;
+                cout << "Tomar una clase que realice una serie de acciones" << endl;
+                cout << "y convertir estas acciones para otros objetivos." << endl;
+                cout << "\n" << endl;
+                cout << "en el ejemplo tenemos una Clase Colones, esta clase" << endl;
+                cout << "ingresa y saca colones de una cuenta." << endl;
+                cout << "\n" << endl;
+                cout << "La clase Adaptador toma la Clase Colones y convierte "<< endl;
+                cout << "la moneda de colones a dolares." << endl;
+                cout << "Es decir la adapta de manera tal que en lugar de ingresar o " << endl;
+                cout << "retirar colones, sean dolares sin afectar a la clase Colones" << endl;
+                cout << "\n" << endl;
+                conversor->ingresarDolares(1000);
+                cout << "\n" << endl;
+                cout <<"Total de colones " << conversor->getSaldo();
+                cout << "\n" << endl;
+                conversor->sacarDolares(1000);
+                cout << "\n" << endl;
+                cout <<"Total de colones " << conversor->getSaldo();
+                cout << "\n" << endl;
+
+                delete conversor;
+                cout << "***********************************Adapter Finalizado***********************************" << endl;
+                break;
+            }
+            case 4:{
+                cout << "Patrón de Diseño adapter" << endl;
+                cout << "Podemos ver como la clase Cliente pide una carroceria de tipo azul y esta " << endl;
+                cout << "pasa a traves de Abstract en la que manda a la clase Carros a crear una " << endl;
+                cout << "carroceria de tipo azul donde clase cliente no se le permite ver "  << endl;
+                cout << "la manera en la que esta siendo ejecutado"  <<endl;
+                cout << "\n" << endl;
+                cout << "********Ejecución en proceso********" << std::endl;
+
+                factory = new carroRojo;
+                factory = new carroAzul;
+
+                Cliente *cliente = new Cliente(factory);
+                cliente->crear();
+
+                cout << "********Ejecución terminada********" << std::endl;
 
 
+                break;
+            }
+            case 5:{
+                cout << "Patrón de Diseño Observer" << endl;
 
+                cout << "\n" << endl;
+                cout << "********Ejecución en proceso********" << std::endl;
+//
+//                DivOserver divOserver1(&sujeto,4);
+//                DivOserver divOserver2(&sujeto,3);
+//                DivOserver divOserver3(&sujeto,4);
+//                sujeto.setVal(14);
 
+                cout << "********Ejecución terminada********" << std::endl;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                break;
             }
             case 6:{
                 cout << "...Saliendo de la ejecución del programa..." << endl;
                 opcion = 0;
+                break;
             }
 
             default:{

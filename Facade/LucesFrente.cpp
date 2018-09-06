@@ -3,7 +3,7 @@
 std::string LucesFrente::encenderLuces() {
 
     intensidad = "media";
-    areOn;
+    areOn = true;
     return "Luces encendidas a intensidad: " + intensidad;
 }
 

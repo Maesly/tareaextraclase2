@@ -3,8 +3,13 @@
 
 #include "iostream"
 
-//Producto final
+/**
+ *Producto final, en este caso cualquier avión.
+*/
+
 class Plane {
+
+protected:
     std::string avion;
     std::string cuerpo;
     std::string motor;
@@ -16,7 +21,6 @@ public:
     std::string getMotor();
     std::string getCuerpo();
     void mostrar();
-
 };
 
 

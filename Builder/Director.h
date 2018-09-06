@@ -2,7 +2,6 @@
 #define TAREAEXTRACLASE2_DIRECTOR_H
 
 #include "PlaneBuilder.h"
-
 class Director {
 public:
     Plane* crearAvion( PlaneBuilder *constructor );

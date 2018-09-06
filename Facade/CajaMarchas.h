@@ -2,7 +2,7 @@
 #ifndef TAREAEXTRACLASE2_CAJAMARCHAS_H
 #define TAREAEXTRACLASE2_CAJAMARCHAS_H
 
-#include <string>
+#include "iostream"
 
 class CajaMarchas {
 private:

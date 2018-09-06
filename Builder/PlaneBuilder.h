@@ -3,7 +3,11 @@
 
 #include "Plane.h"
 
-//Clase Abstracta
+/**
+ * Clase Abstracta, todos los constructores deben llevar estos métodos, por ejemplo
+ * el JetBuilder y el PropellerBuilder son clases concretas de tipo PlaneBuilder.
+ */
+
 class PlaneBuilder {
 
 protected:

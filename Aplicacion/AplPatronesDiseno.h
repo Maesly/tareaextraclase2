@@ -5,20 +5,37 @@
 #ifndef TAREAEXTRACLASE2_APLPATRONESDISENO_H
 #define TAREAEXTRACLASE2_APLPATRONESDISENO_H
 
-#include "../Adapter/Adaptador.h"
-#include "../Facade/Carro.h"
-#include "../Builder/Director.h"
-#include "../Abstract Factory/Abstract.h"
-#include "../Observer/Observer.h"
 #include <iostream>
+#include "../Facade/Carro.h"
+#include "../Adapter/Adaptador.h"
+#include "../Builder/Director.h"
+#include "../Builder/JetBuilder.h"
+#include "../Builder/PropellerBuilder.h"
+#include "../Abstract Factory/Carros.h"
+#include "../Abstract Factory/Cliente.h"
+#include "../Abstract Factory/Abstract.h"
+//#include "../Observer/Observer.h"
+
 using  namespace std;
 
 class AplPatronesDiseno {
-public:
-    int opcion;
-
 private:
+    int opcion ;
+
+    Carro *carro = new Carro();
+    Adaptador *conversor = new Adaptador();
+
+    Director director;
+    JetBuilder constructorJet;
+    PropellerBuilder constructorHelice;
+
+    Abstract *factory;
+
+    //Subject sujeto;
+
+public:
     void menuPrincipal();
+
 
 };
 

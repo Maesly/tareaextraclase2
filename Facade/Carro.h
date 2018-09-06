@@ -21,6 +21,7 @@ private:
     CajaMarchas *cajaMarchas = new CajaMarchas();
     Tanque *tanque = new Tanque();
 
+public:
     void encenderCarro();
     void apagarCarro();
     void moverVolanteDerecha();

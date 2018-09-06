@@ -6,7 +6,6 @@
 //Clase concreta de la clase PlaneBuilder
 //Sabe solamente construir un avión con hélice.
 class PropellerBuilder: public PlaneBuilder {
-
 public:
     void construirPartes();
     void construirMotor();
