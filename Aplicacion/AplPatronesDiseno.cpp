@@ -98,6 +98,8 @@ void AplPatronesDiseno::menuPrincipal() {
                 avionHelice->mostrar();
                 cout << "********Ejecución en finalizada********" << std::endl;
 
+                delete avionHelice;
+                delete avionJet;
                 break;
             }
             case 3:{
@@ -145,8 +147,7 @@ void AplPatronesDiseno::menuPrincipal() {
                 cliente->crear();
 
                 cout << "********Ejecución terminada********" << std::endl;
-
-
+                delete cliente;
                 break;
             }
             case 5:{
@@ -161,7 +162,6 @@ void AplPatronesDiseno::menuPrincipal() {
                 sujeto.setVal(14);
 
                 cout << "********Ejecución terminada********" << std::endl;
-
                 break;
             }
             case 6:{
